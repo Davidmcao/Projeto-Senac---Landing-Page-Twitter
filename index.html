@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral esquerda -->
+        <aside class="sidebar-left">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-star"></i>
+                            <span>Premium</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-list"></i>
+                            <span>Lists</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-bookmark"></i>
+                            <span>Bookmarks</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <span>Communities</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Verified Orgs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-ellipsis-h"></i>
+                            <span>More</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="post-btn">Post</button>
+            
+            <div class="user-profile">
+                <div class="avatar">
+                    <img src="./src/images/ivo-avatar.jpg" alt="User Avatar">
+                </div>
+                <div class="user-info">
+                    <span class="user-name">Ivo Ivanov</span>
+                    <span class="user-handle">@ivofilip</span>
+                </div>
+                <div class="menu-dots">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <!-- Navegação superior -->
+            <nav class="top-nav">
+                <ul>
+                    <li class="active"><a href="#">For you</a></li>
+                    <li><a href="#">Following</a></li>
+                    <li><a href="#">SaaS Growth</a></li>
+                    <li><a href="#">AI Startups</a></li>
+                    <li><a href="#">Fintech Startups</a></li>
+                    <li><a href="#">Web 3</a></li>
+                    <li><a href="#">Product Design</a></li>
+                </ul>
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </div>
+            </nav>
+            
+            <!-- Área de composição de tweet -->
+            <div class="compose-tweet">
+                <div class="compose-avatar">
+                    <img src="./src/images/ivo-avatar.jpg" alt="User Avatar">
+                </div>
+                <div class="compose-input">
+                    <div class="input-area">
+                        <input type="text" placeholder="What is happening?!">
+                    </div>
+                    <div class="compose-actions">
+                        <div class="compose-tools">
+                            <button><i class="far fa-image"></i></button>
+                            <button><i class="fas fa-film"></i></button>
+                            <button><i class="fas fa-list"></i></button>
+                            <button><i class="far fa-smile"></i></button>
+                            <button><i class="far fa-calendar"></i></button>
+                            <button><i class="fas fa-map-marker-alt"></i></button>
+                            <button><i class="fas fa-bold"></i></button>
+                        </div>
+                        <button class="post-btn small">Post</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Feed de tweets -->
+            <div class="tweet-feed">
+                <!-- Tweet 1 -->
+                <div class="tweet">
+                    <div class="tweet-avatar">
+                        <img src="./src/images/ivo-avatar.jpg" alt="Ivo Ivanov">
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <div class="tweet-user-info">
+                                <span class="tweet-name">Ivo Ivanov <i class="fas fa-check-circle verified"></i></span>
+                                <span class="tweet-handle">@ivofilip</span>
+                                <span class="tweet-time">· Just now</span>
+                            </div>
+                            <div class="tweet-menu">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                        <div class="tweet-text">
+                            <p>Sharing my latest development project! 💻✨<br>Clean code and modern architecture for scalable applications</p>
+                        </div>
+                        <div class="tweet-media">
+                            <img src="./src/images/programming.jpg" alt="Código de programação">
+                        </div>
+                        <div class="tweet-actions">
+                            <div class="tweet-action">
+                                <i class="far fa-comment"></i>
+                                <span>23</span>
+                            </div>
+                            <div class="tweet-action">
+                                <i class="fas fa-retweet"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="tweet-action">
+                                <i class="far fa-heart"></i>
+                                <span>143</span>
+                            </div>
+                            <div class="tweet-action">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>2.34K</span>
+                            </div>
+                            <div class="tweet-action">
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                            <div class="tweet-action">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tweet 2 -->
+                <div class="tweet">
+                    <div class="tweet-avatar">
+                        <img src="./src/images/adham-avatar.jpg" alt="Adham Dannaway">
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <div class="tweet-user-info">
+                                <span class="tweet-name">Adham Dannaway <i class="fas fa-check-circle verified"></i></span>
+                                <span class="tweet-handle">@AdhamDannaway</span>
+                                <span class="tweet-time">· 12m</span>
+                            </div>
+                            <div class="tweet-menu">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                        <div class="tweet-text">
+                            <p>✨ Created this example landing page to test out the <a href="#" class="tweet-link">@practicalUI</a> design system.</p>
+                            <p>Works well so far and it really speeds up the design process</p>
+                            <p>Nearly there. Join the waitlist to be notified when the design system is released</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Barra lateral direita -->
+        <aside class="sidebar-right">
+            <!-- Quem seguir -->
+            <div class="who-to-follow">
+                <h2>Who to follow</h2>
+                <div class="follow-suggestions">
+                    <!-- Sugestão 1 -->
+                    <div class="follow-item">
+                        <div class="follow-avatar">
+                            <img src="./src/images/jane-avatar.jpg" alt="Jane Cooper">
+                        </div>
+                        <div class="follow-info">
+                            <div class="follow-name">Jane Cooper <i class="fas fa-check-circle verified"></i></div>
+                            <div class="follow-handle">@JCooper</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    
+                    <!-- Sugestão 2 -->
+                    <div class="follow-item">
+                        <div class="follow-avatar">
+                            <img src="./src/images/cody-avatar.jpg" alt="Cody Fisher">
+                        </div>
+                        <div class="follow-info">
+                            <div class="follow-name">Cody Fisher</div>
+                            <div class="follow-handle">@codyfisher</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    
+                    <!-- Sugestão 3 -->
+                    <div class="follow-item">
+                        <div class="follow-avatar">
+                            <img src="./src/images/guy-avatar.jpg" alt="Guy Hawkins">
+                        </div>
+                        <div class="follow-info">
+                            <div class="follow-name">Guy Hawkins <i class="fas fa-check-circle verified"></i></div>
+                            <div class="follow-handle">@GuyHawkins</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+            
+            <!-- Tendências -->
+            <div class="trends">
+                <h2>Bulgaria trends</h2>
+                <div class="trend-items">
+                    <!-- Tendência 1 -->
+                    <div class="trend-item">
+                        <div class="trend-info">
+                            <div class="trend-category">1 · Sports · Trending</div>
+                            <div class="trend-name">Grigor Dimitrov</div>
+                            <div class="trend-posts">45.2K posts</div>
+                        </div>
+                        <div class="trend-menu">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Tendência 2 -->
+                    <div class="trend-item">
+                        <div class="trend-info">
+                            <div class="trend-category">2 · Politics · Trending</div>
+                            <div class="trend-name">Ukraine</div>
+                            <div class="trend-posts">235K posts</div>
+                        </div>
+                        <div class="trend-menu">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Tendência 3 -->
+                    <div class="trend-item">
+                        <div class="trend-info">
+                            <div class="trend-category">3 · Trending</div>
+                            <div class="trend-name">Bulgaria</div>
+                            <div class="trend-posts">68K posts</div>
+                        </div>
+                        <div class="trend-menu">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Tendência 4 -->
+                    <div class="trend-item">
+                        <div class="trend-info">
+                            <div class="trend-category">4 · Politics · Trending</div>
+                            <div class="trend-name">Elections</div>
+                            <div class="trend-posts">45.2K posts</div>
+                        </div>
+                        <div class="trend-menu">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Tendência 5 -->
+                    <div class="trend-item">
+                        <div class="trend-info">
+                            <div class="trend-category">5 · Sports · Trending</div>
+                            <div class="trend-name">Kobrat Pulev</div>
+                            <div class="trend-posts">87.4K posts</div>
+                        </div>
+                        <div class="trend-menu">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Tendência 6 -->
+                    <div class="trend-item">
+                        <div class="trend-info">
+                            <div class="trend-category">6 · Technology · Trending</div>
+                            <div class="trend-name">ChatGPT</div>
+                            <div class="trend-posts">45.2K posts</div>
+                        </div>
+                        <div class="trend-menu">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Tendência 7 -->
+                    <div class="trend-item">
+                        <div class="trend-info">
+                            <div class="trend-category">7 · Technology · Trending</div>
+                            <div class="trend-name">#DesignSubscription</div>
+                            <div class="trend-posts">45.2K posts</div>
+                        </div>
+                        <div class="trend-menu">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
